@@ -12,3 +12,9 @@ def quicksort(array):
         mayores = [x for x in array if x > pivote]
         
         return quicksort(menores) + iguales + quicksort(mayores)
+
+numeros = [34, 7, 23, 32, 5, 62, 32, 2, 78, 1]
+print("Array original:", numeros)
+
+numeros_ordenados = quicksort(numeros)
+print("Array ordenado:", numeros_ordenados)
